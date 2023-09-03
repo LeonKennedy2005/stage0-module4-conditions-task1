@@ -3,14 +3,14 @@ package school.mjc.stage0.conditions.task1;
 public class PositiveNumberDeterminer {
     public void isPositive(int numberToBeDetermined) {
         if (numberToBeDetermined>0){
-            System.out.println("positive");
-        } else if (numberToBeDetermined<0) {
-            System.out.println("negative");
+            System.out.println("true");
+        } else if (numberToBeDetermined<=0) {
+            System.out.println("false");
         }
     }
     public static void main(String[] args) {
         PositiveNumberDeterminer determiner = new PositiveNumberDeterminer();
-        int numberToBeDetermined = -6;
+        int numberToBeDetermined =0;
         determiner.isPositive(numberToBeDetermined);
     }
 }
